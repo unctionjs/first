@@ -1,12 +1,21 @@
-/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
+/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type, no-magic-numbers */
 import {test} from "tap"
 
-import {{NAME}} from "./source.js"
+import first from "./source.js"
 
 test(({same, end}) => {
   same(
-    {{NAME}}(true),
-    false
+    first([1, 2, 3]),
+    1
+  )
+
+  end()
+})
+
+test(({same, end}) => {
+  same(
+    first("abc"),
+    "a"
   )
 
   end()
