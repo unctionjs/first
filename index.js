@@ -1,5 +1,4 @@
 /* eslint-disable no-magic-numbers */
-
-export default function first (orderedList: ArrayType | string): mixed {
-  return orderedList[0]
+export default function first(orderedList) {
+  return orderedList[0];
 }
