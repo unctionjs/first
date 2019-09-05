@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (ArrayType | string) => mixed
+> OrderedEnumerableType<A> => A | string | void
 
 Returns the first item of an ordered list.
 
