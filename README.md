@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> OrderedEnumerableType<A> => A | string | void
+> OrderedArray<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string => A | string | void
 
 Returns the first item of an ordered list.
 
